@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "cf1d834c-1151-4c95-a0d2-bd07c183f946",
+		"name": "test1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8081/validateCard?ordr_tel=0222222222&xml=<employee><department><id>101</id><name>IT</name></department><firstName>Lokesh</firstName><id>1</id><lastName>Gupta</lastName></employee>",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/validateCard?ordr_tel=0222222222&xml=<employee><department><id>101</id><name>IT</name></department><firstName>Lokesh</firstName><id>1</id><lastName>Gupta</lastName></employee>",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"validateCard"
+					],
+					"query": [
+						{
+							"key": "ordr_tel",
+							"value": "0222222222"
+						},
+						{
+							"key": "xml",
+							"value": "<employee><department><id>101</id><name>IT</name></department><firstName>Lokesh</firstName><id>1</id><lastName>Gupta</lastName></employee>"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/uploadFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/tothanhluong/Downloads/hoc-tieng-duc-61.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8081/uploadFile",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"uploadFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/downloadFile/htHFb922",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/downloadFile/htHFb922",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"downloadFile",
+						"htHFb922"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/object?json=1&date=31/12/1998",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/object?json=1&date=31/12/1998",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"object"
+					],
+					"query": [
+						{
+							"key": "json",
+							"value": "1"
+						},
+						{
+							"key": "date",
+							"value": "31/12/1998"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
